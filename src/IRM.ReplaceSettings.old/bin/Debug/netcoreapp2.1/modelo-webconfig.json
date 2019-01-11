@@ -1,0 +1,25 @@
+{
+  "arquivos": [
+    {
+      "nomeArquivo": "C://temp//build//IRM.DevOps-Test//Web.Config",
+      "substituicoes": [
+        {
+          "de": "${ConnectionString}",
+          "para": "minha_connectionstring"
+		},
+		{
+          "de": "DebuInfo=\"true\"",
+          "para": "DebuInfo=\"false\""
+		},
+		{
+          "de": "192.168.3.158",
+          "para": "apl-web-qa-01"
+		},
+		{
+          "de": "url=\"http://localhost/api_url\"",
+          "para": "Url=\"http://apl-web-qa-01/api_url\""
+		}
+      ]
+    }
+  ]
+}

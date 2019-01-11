@@ -1,0 +1,29 @@
+{
+  "arquivos": [
+    {
+      "nomeArquivo": "C://Temp//Dev//cert//main.*.bundle.js",
+      "substituicoes": [
+        {
+          "de": "serverUpa:\"http://192.168.3.158/upa-webapi/api/\"",
+          "para": "serverUpa:\"http://APL-WEB-QA-01.saude.ma.gov.br/upa-webapi/api/\""
+        },
+        {
+          "de": "serverGeneric:\"http://192.168.3.158/pad/webapi/generic/api/ConteudoDado/\"",
+          "para": "serverGeneric:\"http://APL-WEB-QA-01.saude.ma.gov.br/pad/webapi/generic/api/ConteudoDado/\""
+        },
+        {
+          "de": "serverSecurity:\"http://192.168.3.158/pad/webapi/security\"",
+          "para": "serverSecurity:\"http://APL-WEB-QA-01.saude.ma.gov.br/pad/webapi/security\""
+        },
+        {
+          "de": "serverNode:\"http://192.166.254.5:3001\"",
+          "para": "serverNode:\"http://node.saude.ma.gov.br:3002\""
+        },
+        {
+          "de": "serverNode:\"http://node.saude.ma.gov.br:3001\"",
+          "para": "serverNode:\"http://node.saude.ma.gov.br:3002\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\bin\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.deps.json
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\bin\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.runtimeconfig.json
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\bin\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.runtimeconfig.dev.json
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\bin\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.dll
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\bin\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.pdb
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\obj\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.csprojAssemblyReference.cache
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\obj\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.csproj.CoreCompileInputs.cache
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\obj\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.AssemblyInfoInputs.cache
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\obj\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.AssemblyInfo.cs
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\obj\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.dll
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettingsTests\obj\Debug\netcoreapp2.1\IRM.ReplaceSettingsTests.pdb

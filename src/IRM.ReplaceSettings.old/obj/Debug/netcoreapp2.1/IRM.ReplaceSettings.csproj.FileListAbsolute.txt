@@ -1,0 +1,14 @@
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\netcoreapp2.1\IRM.ReplaceSettings.csprojAssemblyReference.cache
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\netcoreapp2.1\IRM.ReplaceSettings.csproj.CoreCompileInputs.cache
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\netcoreapp2.1\IRM.ReplaceSettings.AssemblyInfoInputs.cache
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\netcoreapp2.1\IRM.ReplaceSettings.AssemblyInfo.cs
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\bin\Debug\netcoreapp2.1\modelo-webconfig.json
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\bin\Debug\netcoreapp2.1\replacesettings.deps.json
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\bin\Debug\netcoreapp2.1\replacesettings.runtimeconfig.json
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\bin\Debug\netcoreapp2.1\replacesettings.runtimeconfig.dev.json
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\bin\Debug\netcoreapp2.1\replacesettings.dll
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\bin\Debug\netcoreapp2.1\replacesettings.pdb
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\netcoreapp2.1\IRM.ReplaceSettings.Properties.Resources.resources
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\netcoreapp2.1\IRM.ReplaceSettings.csproj.GenerateResource.cache
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\netcoreapp2.1\replacesettings.dll
+D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\netcoreapp2.1\replacesettings.pdb

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IRM.ReplaceSettings": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\GITLab\\irm\\IRM.ReplaceSettings\\src\\IRM.ReplaceSettings\\modelo-webconfig.json"
+    }
+  }
+}
