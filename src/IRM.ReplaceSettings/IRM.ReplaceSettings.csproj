@@ -106,5 +106,14 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="test_files\index.html" />
+    <Content Include="test_files\main.2a8249ff89875a33bbbf.bundle.js" />
+    <Content Include="test_files\source\index.html" />
+    <Content Include="test_files\source\main.2a8249ff89875a33bbbf.bundle.js" />
+    <Content Include="test_files\source\styles.6a0c45064b0fb63081d3.bundle.css" />
+    <Content Include="test_files\styles.6a0c45064b0fb63081d3.bundle.css" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,7 +39,7 @@ namespace IRM.ReplaceSettings.Services
                 var obj = JToken.Parse(jsonTexto);
             }
 
-            catch (System.Exception ex) 
+            catch (System.Exception ex)
             {
                 throw ex;
             }
@@ -49,7 +49,7 @@ namespace IRM.ReplaceSettings.Services
         }
         public void ProcessarArquivos()
         {
-            if(this.SubstituicoesModel== null)
+            if (this.SubstituicoesModel == null)
             {
                 throw new System.Exception("SubstituicoesModel inválida!");
             }
@@ -62,9 +62,13 @@ namespace IRM.ReplaceSettings.Services
                 if (arquivo.NomeArquivo.Contains("*"))
                 {
                     string diretorio = arquivo.NomeArquivo.Substring(0, arquivo.NomeArquivo.LastIndexOf("/"));
-                    string coringa = arquivo.NomeArquivo.Substring(arquivo.NomeArquivo.LastIndexOf("/")+1);
+                    string coringa = arquivo.NomeArquivo.Substring(arquivo.NomeArquivo.LastIndexOf("/") + 1);
                     var fileList = new DirectoryInfo(diretorio).GetFiles(coringa, SearchOption.TopDirectoryOnly);
 
+                    if (fileList.Length == 0)
+                    {
+                        throw new System.Exception(string.Format("Arquivo com coringa '{0}' não encontrado!", coringa));
+                    }
                     arquivoSubstituido = fileList[0].FullName;
                 }
                 else
