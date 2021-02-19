@@ -15,3 +15,17 @@ D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\replacesetti
 D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\obj\Debug\replacesettings.pdb
 D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\bin\Debug\modelo-webconfig - Copy.json
 D:\GITLab\irm\IRM.ReplaceSettings\src\IRM.ReplaceSettings\bin\Debug\teste.json
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Debug\IRM.ReplaceSettings.csprojAssemblyReference.cache
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Debug\IRM.ReplaceSettings.csproj.CoreCompileInputs.cache
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Debug\replacesettings.exe
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Debug\replacesettings.pdb
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Debug\replacesettings.exe.config
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Debug\replacesettings.exe.manifest
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Debug\replacesettings.application
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Debug\replacesettings.exe
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Debug\replacesettings.pdb
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Debug\Newtonsoft.Json.dll
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Debug\Newtonsoft.Json.xml
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Debug\replacesettings.exe.manifest
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Debug\replacesettings.application
+c:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Debug\IRM.ReplaceSettings.csproj.CopyComplete

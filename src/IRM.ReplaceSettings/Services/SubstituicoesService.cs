@@ -1,5 +1,6 @@
 ﻿using IRM.ReplaceSettings.Models;
 using Newtonsoft.Json.Linq;
+using System;
 using System.IO;
 
 namespace IRM.ReplaceSettings.Services
@@ -56,9 +57,6 @@ namespace IRM.ReplaceSettings.Services
 
             foreach (var arquivo in this.SubstituicoesModel.Arquivos)
             {
-                string text;
-                string arquivoSubstituido;
-
                 if (arquivo.NomeArquivo.Contains("*"))
                 {
                     string diretorio = arquivo.NomeArquivo.Substring(0, arquivo.NomeArquivo.LastIndexOf("/"));
@@ -69,23 +67,32 @@ namespace IRM.ReplaceSettings.Services
                     {
                         throw new System.Exception(string.Format("Arquivo com coringa '{0}' não encontrado!", coringa));
                     }
-                    arquivoSubstituido = fileList[0].FullName;
+
+                    foreach (var file in fileList)
+                    {
+                        SubstituirVariaveisNoArquivo(arquivo, file.FullName);
+                    }
                 }
                 else
                 {
-                    arquivoSubstituido = arquivo.NomeArquivo;
-                }
-
-                text = File.ReadAllText(arquivoSubstituido);
-
-                foreach (var substituicao in arquivo.Substituicoes)
-                {
-                    text = text.Replace(substituicao.De, substituicao.Para);
-                    File.WriteAllText(arquivoSubstituido, text);
+                    SubstituirVariaveisNoArquivo(arquivo, arquivo.NomeArquivo);
                 }
 
             }
 
+        }
+
+        private void SubstituirVariaveisNoArquivo(Arquivo arquivo, string arquivoSubstituido)
+        {
+            string text;
+            text = File.ReadAllText(arquivoSubstituido);
+
+            foreach (var substituicao in arquivo.Substituicoes)
+            {
+                text = text.Replace(substituicao.De, substituicao.Para);
+                File.WriteAllText(arquivoSubstituido, text);
+                Console.WriteLine($"Arquivo: '{arquivoSubstituido}' | Substituição/De: '{substituicao.De}' | Substituição/Para: '{substituicao.Para}'");
+            }
         }
     }
 }

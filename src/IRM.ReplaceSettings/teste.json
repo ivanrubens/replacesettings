@@ -1,37 +1,11 @@
 {
   "arquivos": [
     {
-      "nomeArquivo": "D:\\GITLab\\irm\\IRM.ReplaceSettings\\src\\IRM.ReplaceSettings\\test_files//index.html",
+      "nomeArquivo": "C://dev//irm//replacesettings//src//IRM.ReplaceSettings//test_files//main-*.js",
       "substituicoes": [
         {
-          "de": "%BASE_HREF%",
-          "para": "/upa-painel/"
-        }
-      ]
-    },
-    {
-      "nomeArquivo": "D:\\GITLab\\irm\\IRM.ReplaceSettings\\src\\IRM.ReplaceSettings\\test_files//main.*.bundle.js",
-      "substituicoes": [
-        {
-          "de": "%IIS_SERVER%",
-          "para": "APL-WEB-DEV-01.saude.ma.gov.br"
-        },
-        {
-          "de": "%NODE_SERVER%",
-          "para": "node.saude.ma.gov.br"
-        },
-        {
-          "de": "%NODE_PORT%",
-          "para": "3001"
-        }
-      ]
-    },
-    {
-      "nomeArquivo": "D:\\GITLab\\irm\\IRM.ReplaceSettings\\src\\IRM.ReplaceSettings\\test_files//styles.*.bundle.css",
-      "substituicoes": [
-        {
-          "de": "%BASE_HREF%",
-          "para": "/upa-painel/"
+          "de": "%URL_API%",
+          "para": "http://agateway.saude.ma.gov.br:8000/painel-covid19-qa"
         }
       ]
     }
