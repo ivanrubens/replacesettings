@@ -91,7 +91,7 @@ namespace IRM.ReplaceSettings.Services
             {
                 text = text.Replace(substituicao.De, substituicao.Para);
                 File.WriteAllText(arquivoSubstituido, text);
-                Console.WriteLine($"Arquivo: '{arquivoSubstituido}' | Substituição/De: '{substituicao.De}' | Substituição/Para: '{substituicao.Para}'");
+                Console.WriteLine($"Arquivo: '{arquivoSubstituido}' | Substituição: '{substituicao.De}'");
             }
         }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj": {}
+    "C:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj": {}
   },
   "projects": {
-    "c:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj": {
+    "C:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj",
+        "projectUniqueName": "C:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj",
         "projectName": "IRM.ReplaceSettingsTests",
-        "projectPath": "c:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj",
+        "projectPath": "C:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj",
         "packagesPath": "C:\\Users\\ivan.martins\\.nuget\\packages\\",
-        "outputPath": "c:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\obj\\",
+        "outputPath": "C:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivan.martins\\AppData\\Roaming\\NuGet\\NuGet.Config",

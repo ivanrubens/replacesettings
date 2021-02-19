@@ -1,0 +1,14 @@
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Release\replacesettings.exe.config
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Release\replacesettings.exe.manifest
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Release\replacesettings.application
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Release\replacesettings.exe
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Release\replacesettings.pdb
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Release\Newtonsoft.Json.dll
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\bin\Release\Newtonsoft.Json.xml
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Release\IRM.ReplaceSettings.csprojAssemblyReference.cache
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Release\IRM.ReplaceSettings.csproj.CoreCompileInputs.cache
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Release\replacesettings.exe.manifest
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Release\replacesettings.application
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Release\IRM.ReplaceSettings.csproj.CopyComplete
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Release\replacesettings.exe
+C:\dev\irm\replacesettings\src\IRM.ReplaceSettings\obj\Release\replacesettings.pdb

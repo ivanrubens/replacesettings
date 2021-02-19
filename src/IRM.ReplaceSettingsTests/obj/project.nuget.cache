@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nbz3ucXen57EHH/Hx6U1rAXS/cOTY3M4zSueQzCi2IBgAR0v4JEHODXMNV0HaWN5ukiE/xT5wf0mCd+RePsUUw==",
+  "dgSpecHash": "uXWsnBLaI31S4e/PPXhAPmhhv58UvQYefuXCZ9U+KZnUf+B28cAa15V58ho0TiXYW5V7Q31X6+YoA9mHQAGFjw==",
   "success": true,
-  "projectFilePath": "c:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj",
+  "projectFilePath": "C:\\dev\\irm\\replacesettings\\src\\IRM.ReplaceSettingsTests\\IRM.ReplaceSettingsTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivan.martins\\.nuget\\packages\\microsoft.codecoverage\\15.9.0\\microsoft.codecoverage.15.9.0.nupkg.sha512",
     "C:\\Users\\ivan.martins\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

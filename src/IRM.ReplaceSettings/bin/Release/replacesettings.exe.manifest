@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="replacesettings.exe" size="7680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="replacesettings.exe" size="7168">
       <assemblyIdentity name="replacesettings" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eH4lPI2yWTgUBJd2rdd3m7V4qLbpRK5KsmDWX/koZoM=</dsig:DigestValue>
+        <dsig:DigestValue>VR+8/lefdmNjsiDO1qDyEeGP8q2ku5VEoOi7+oChlF8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
