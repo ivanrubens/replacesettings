@@ -1,0 +1,27 @@
+{
+  "arquivos": [
+    {
+      "nomeArquivo": "C:\\dev\\ivan\\replacesettings\\src\\IRM.ReplaceSettingsTests\\bin\\Debug\\net5.0\\filesTeste\\index_sem_asterisco.html",
+      "substituicoes": [
+        {
+          "de": "%BASE_URL%",
+          "para": "http://url-teste.replace.local:88/base"
+        },
+        {
+          "de": "%URL_CSS%",
+          "para": "http://url-teste.replace.local:88/css_bundle"
+        },
+        {
+          "de": "%URL_JS%",
+          "para": "http://url-teste.replace.local:881/js_bundle"
+        },
+        {
+          "de": "#BODY_URL#",
+          "para": "http://url-teste.replace.local:882/body"
+        }
+      ]
+    }
+  ]
+}
+
+

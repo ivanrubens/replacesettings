@@ -1,0 +1,31 @@
+{
+  "arquivos": [
+    {
+      "nomeArquivo": "C:\\dev\\ivan\\replacesettings\\src\\IRM.ReplaceSettingsTests\\bin\\Debug\\net5.0\\filesTeste\\main-*.js",
+      "substituicoes": [
+        {
+          "de": "%URL_API%",
+          "para": "https://url_api.teste.replace.local:88/base/url_api"
+        },
+        {
+          "de": "#BACK_API#",
+          "para": "https://back_api.teste.replace.local:89"
+        },
+        {
+          "de": "mapa_api.teste.replace.local:90",
+          "para": "new_mapa_back_api.teste.replace.local:91"
+        },
+        {
+          "de": "auth_api.teste.replace.local:100",
+          "para": "new_auth_back_api.teste.replace.local:101"
+        },
+        {
+          "de": "mapa-covid19.saude.ma.gov.br",
+          "para": "new_mapa_back_api.teste.replace.local:81"
+        }
+      ]
+    }
+  ]
+}
+
+

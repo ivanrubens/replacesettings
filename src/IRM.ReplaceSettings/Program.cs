@@ -7,7 +7,6 @@ namespace IRM.ReplaceSettings
     class Program
     {
         public string NomeArquivoComCaminho { get; set; }
-
         static void Main(string[] args)
         {
             if (!ValidarParametros(args))
@@ -17,7 +16,6 @@ namespace IRM.ReplaceSettings
 
             SubstituicoesService arquivoService = new SubstituicoesService(args[0]);
             arquivoService.ProcessarArquivos();
-
         }
 
         private static bool ValidarParametros(string[] args)
@@ -34,7 +32,5 @@ namespace IRM.ReplaceSettings
 
             return true;
         }
-
-
     }
 }

@@ -1,7 +1,10 @@
 ﻿using IRM.ReplaceSettings.Models;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace IRM.ReplaceSettings.Services
 {
@@ -10,10 +13,9 @@ namespace IRM.ReplaceSettings.Services
         protected string _nomeArquivoComCaminho;
         public SubstituicoesModel SubstituicoesModel { get; set; }
 
-        public SubstituicoesService(string nomeArquivoComCaminho)
+        public SubstituicoesService(string pathNomeArquivoMapeamento)
         {
-            _nomeArquivoComCaminho = nomeArquivoComCaminho;
-
+            _nomeArquivoComCaminho = pathNomeArquivoMapeamento;
             SubstituicoesModel = AbrirArquivo();
         }
 
@@ -27,72 +29,95 @@ namespace IRM.ReplaceSettings.Services
                 return null;
             }
 
-            substituicoesModel = Newtonsoft.Json.JsonConvert.DeserializeObject<SubstituicoesModel>(jsonTexto);
+            substituicoesModel = JsonConvert.DeserializeObject<SubstituicoesModel>(jsonTexto);
 
             return substituicoesModel;
-
         }
 
         private bool ValidarJson(string jsonTexto)
         {
-            try
-            {
-                var obj = JToken.Parse(jsonTexto);
-            }
-
-            catch (System.Exception ex)
-            {
-                throw ex;
-            }
-
+            JToken.Parse(jsonTexto);
 
             return true;
         }
         public void ProcessarArquivos()
         {
-            if (this.SubstituicoesModel == null)
+            try
             {
-                throw new System.Exception("SubstituicoesModel inválida!");
-            }
-
-            foreach (var arquivo in this.SubstituicoesModel.Arquivos)
-            {
-                if (arquivo.NomeArquivo.Contains("*"))
+                if (this.SubstituicoesModel == null)
                 {
-                    string diretorio = arquivo.NomeArquivo.Substring(0, arquivo.NomeArquivo.LastIndexOf("/"));
-                    string coringa = arquivo.NomeArquivo.Substring(arquivo.NomeArquivo.LastIndexOf("/") + 1);
-                    var fileList = new DirectoryInfo(diretorio).GetFiles(coringa, SearchOption.TopDirectoryOnly);
-
-                    if (fileList.Length == 0)
-                    {
-                        throw new System.Exception(string.Format("Arquivo com coringa '{0}' não encontrado!", coringa));
-                    }
-
-                    foreach (var file in fileList)
-                    {
-                        SubstituirVariaveisNoArquivo(arquivo, file.FullName);
-                    }
-                }
-                else
-                {
-                    SubstituirVariaveisNoArquivo(arquivo, arquivo.NomeArquivo);
+                    throw new Exception("SubstituicoesModel inválida!");
                 }
 
-            }
+                foreach (var arquivo in this.SubstituicoesModel.Arquivos)
+                {
+                    if (arquivo.NomeArquivo.Contains("*"))
+                    {
 
+                        string diretorio = arquivo.NomeArquivo.Substring(0, ObterPosicaoDaUltimaBarra(arquivo.NomeArquivo));
+                        string coringa = arquivo.NomeArquivo.Substring(ObterPosicaoDaUltimaBarra(arquivo.NomeArquivo) + 1);
+                        var fileList = new DirectoryInfo(diretorio).GetFiles(coringa, SearchOption.TopDirectoryOnly);
+
+                        if (fileList.Length == 0)
+                        {
+                            throw new Exception(string.Format("Arquivo com coringa '{0}' não encontrado!", coringa));
+                        }
+
+                        foreach (var file in fileList)
+                        {
+                            SubstituirVariaveisNoArquivo(arquivo, file.FullName);
+                        }
+                    }
+                    else
+                    {
+                        SubstituirVariaveisNoArquivo(arquivo, arquivo.NomeArquivo);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
-        private void SubstituirVariaveisNoArquivo(Arquivo arquivo, string arquivoSubstituido)
+        private int ObterPosicaoDaUltimaBarra(string nomeArquivo)
+        {
+            List<string> caracteres = new List<string>();
+            caracteres.Add("/");
+            caracteres.Add("//");
+            caracteres.Add("\\");
+            caracteres.Add("\\\\");
+
+            foreach (var caractere in caracteres)
+            {
+                if (nomeArquivo.LastIndexOf(caractere) > 0)
+                {
+                    return nomeArquivo.LastIndexOf(caractere);
+                }
+            }
+
+            return 0;
+        }
+
+        private void SubstituirVariaveisNoArquivo(Arquivo arquivo, string pathArquivoDestino)
         {
             string text;
-            text = File.ReadAllText(arquivoSubstituido);
+            text = File.ReadAllText(pathArquivoDestino);
 
             foreach (var substituicao in arquivo.Substituicoes)
             {
-                text = text.Replace(substituicao.De, substituicao.Para);
-                File.WriteAllText(arquivoSubstituido, text);
-                Console.WriteLine($"Arquivo: '{arquivoSubstituido}' | Substituição: '{substituicao.De}'");
+                text = ReplacePlaceHolders(text, substituicao.De, substituicao.Para);
+                File.WriteAllText(pathArquivoDestino, text);
+                Console.WriteLine($"Arquivo: '{pathArquivoDestino}' | Substituição: '{substituicao.De}'");
             }
+        }
+
+        private string ReplacePlaceHolders(string texto, string substituicaoDe, string substituicaoPara)
+        {
+            Regex pattern = new Regex(substituicaoDe);
+            string replacedText = pattern.Replace(texto, substituicaoPara);
+
+            return replacedText;
         }
     }
 }

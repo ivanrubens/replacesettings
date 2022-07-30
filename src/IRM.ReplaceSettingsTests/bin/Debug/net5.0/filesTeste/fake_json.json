@@ -1,0 +1,15 @@
+{
+  "arquivos_fake": [
+    {
+      "nomeArquivo_fake": "C:\\dev\\ivan\\replacesettings\\src\\IRM.ReplaceSettingsTests\\bin\\Debug\\net5.0\\filesTeste\\main-*.js",
+      "substituicoes_fake": [
+        {
+          "de": "%URL_API%",
+          "para": "https://url_api.teste.replace.local:88/base/url_api"
+        }
+      ]
+    }
+  ]
+}
+
+
