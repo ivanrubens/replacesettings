@@ -32,7 +32,7 @@ namespace IRM.ReplaceSettingsTests
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("--headless");
             options.LeaveBrowserRunning = false;
-            IWebDriver client = new ChromeDriver("C:\\Users\\ivan.martins\\OneDrive - TOP DOWN CONSULTORIA & PROJETOS S.A\\dev\\SeleniumWebDriver\\chrome", options);
+            IWebDriver client = new ChromeDriver("C:\\dev\\SeleniumWebDriver\\chrome", options);
 
             // Act
             var subsituicoesService = new SubstituicoesService(arquivoJsonMapeamento);
